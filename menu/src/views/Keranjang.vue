@@ -60,7 +60,9 @@
                   }}</strong>
                 </td>
                 <td align="right" class="text-danger">
-                  <b-icon-trash @click="hapusKeranjang(keranjang.id)"></b-icon-trash>
+                  <b-icon-trash
+                    @click="hapusKeranjang(keranjang.id)"
+                  ></b-icon-trash>
                 </td>
               </tr>
               <tr>
@@ -101,17 +103,22 @@ export default {
     },
     hapusKeranjang(id){
         axios
-      .get("http://localhost:3000/keranjangs/"+id)
-      .then(() => { 
-            this.$toast.error("Sukses Menghapus", {
-          type: "error",
-          position: "top-right",
-          duration: 3000,
-          dismissible: true,
-        });
-      )}
+            .delete("http://localhost:3000/keranjangs/"+id)
+            .then(() => { 
+                this.$toast.error("Sukses Menghapus", {
+                    type: "error",
+                    position: "top-right",
+                    duration: 3000,
+                    dismissible: true,
+                });
+
+        // Update Data Keranjang
+            axios
+                .get("http://localhost:3000/keranjangs")
+                .then((response) => this.setKeranjangs(response.data))
+                .catch((error) => console.log(error));
+            )}
       .catch((error) => console.log(error));
-    }
   },
   mounted() {
     axios
