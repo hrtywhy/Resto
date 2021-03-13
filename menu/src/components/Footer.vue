@@ -1,0 +1,22 @@
+<template>
+  <footer class="mt-5 mb-5">
+      <hr>
+      <div class="container">
+          <div class="row">
+              <div class="col text-center">
+                  &copy; 2021 Belanja.com
+              </div>
+          </div>
+      </div>
+  </footer>
+</template>
+
+<script>
+export default {
+    name: 'Footer'
+}
+</script>
+
+<style>
+
+</style>

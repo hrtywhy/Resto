@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Bang Latif</a>
+        <a class="navbar-brand" href="#">Restaurant</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -20,7 +20,17 @@
               <router-link class="nav-link" to="/">Home</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/food">Foods</router-link>
+              <router-link class="nav-link" to="/foods">Foods</router-link>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <router-link class="nav-link" to="/keranjang">
+              Keranjang
+              <b-icon-bag></b-icon-bag>
+              <span class="badge badge-success ml-2">0</span>
+              </router-link>
             </li>
           </ul>
         </div>
