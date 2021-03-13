@@ -1,105 +1,118 @@
 {
-    "best-products":[
-        {
-            "id":1,
-            "kode": "K-01",
-            "nama": "Sate Ayam",
-            "harga": 16000,
-            "is_ready": "true",
-            "gambar": "sate-ayam.jpg "
-        },
-        {
-            "id":1,
-            "kode": "K-02",
-            "nama": "Sate Sapi",
-            "harga": 20000,
-            "is_ready": "true",
-            "gambar": "sate-sapi.jpg"
-        },
-        {
-            "id":1,
-            "kode": "K-03",
-            "nama": "Sate Kambing",
-            "harga": 21000,
-            "is_ready": "true",
-            "gambar": "sate-kambing.jpg"
-        }
-    ],
-
-    "products":[
-        {
-            "id":1,
-            "kode": "K-01",
-            "nama": "Sate Ayam",
-            "harga": 16000,
-            "is_ready": "true",
-            "gambar": "sate-ayam.jpg"
-        },
-        {
-            "id":2,
-            "kode": "K-02",
-            "nama": "Sate Babi",
-            "harga": 16000,
-            "is_ready": "true",
-            "gambar": "sate-babi.jpg"
-        },
-        {
-            "id":3,
-            "kode": "K-03",
-            "nama": "Sate Kambing",
-            "harga": 16000,
-            "is_ready": "true",
-            "gambar": "sate-kambing.jpg"
-        },
-        {
-            "id":4,
-            "kode": "K-04",
-            "nama": "Sate Sapi",
-            "harga": 16000,
-            "is_ready": "true",
-            "gambar": "sate-sapi.jpg"
-        },
-        {
-            "id":5,
-            "kode": "K-05",
-            "nama": "Soto",
-            "harga": 16000,
-            "is_ready": "true",
-            "gambar": "soto.jpg"
-        },
-        {
-            "id":6,
-            "kode": "K-06",
-            "nama": "Bakso",
-            "harga": 16000,
-            "is_ready": "true",
-            "gambar": "bakso.jpg"
-        },
-        {
-            "id":7,
-            "kode": "K-07",
-            "nama": "Tenkleng Basong",
-            "harga": 16000,
-            "is_ready": "true",
-            "gambar": "tengkleng.jpg"
-        },
-        {
-            "id":8,
-            "kode": "K-08",
-            "nama": "Ayam Bakar",
-            "harga": 16000,
-            "is_ready": "true",
-            "gambar": "ayam-bakar.jpg"
-        },
-        {
-            "id":9,
-            "kode": "K-09",
-            "nama": "Ayam Taliwang",
-            "harga": 16000,
-            "is_ready": "true",
-            "gambar": "ayam-taliwang.jpg"
-        }
-    ],
-    "keranjang":[],
-    "pesanan":[]
+  "best-products": [
+    {
+      "id": 1,
+      "kode": "K-01",
+      "nama": "Sate Ayam",
+      "harga": 16000,
+      "is_ready": "true",
+      "gambar": "sate-ayam.jpg "
+    },
+    {
+      "id": 2,
+      "kode": "K-02",
+      "nama": "Sate Sapi",
+      "harga": 20000,
+      "is_ready": "true",
+      "gambar": "sate-sapi.jpg"
+    },
+    {
+      "id": 3,
+      "kode": "K-03",
+      "nama": "Sate Kambing",
+      "harga": 21000,
+      "is_ready": "true",
+      "gambar": "sate-kambing.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "kode": "K-01",
+      "nama": "Sate Ayam",
+      "harga": 16000,
+      "is_ready": "true",
+      "gambar": "sate-ayam.jpg"
+    },
+    {
+      "id": 2,
+      "kode": "K-02",
+      "nama": "Sate Babi",
+      "harga": 16000,
+      "is_ready": "true",
+      "gambar": "sate-babi.jpg"
+    },
+    {
+      "id": 3,
+      "kode": "K-03",
+      "nama": "Sate Kambing",
+      "harga": 16000,
+      "is_ready": "true",
+      "gambar": "sate-kambing.jpg"
+    },
+    {
+      "id": 4,
+      "kode": "K-04",
+      "nama": "Sate Sapi",
+      "harga": 16000,
+      "is_ready": "true",
+      "gambar": "sate-sapi.jpg"
+    },
+    {
+      "id": 5,
+      "kode": "K-05",
+      "nama": "Soto",
+      "harga": 16000,
+      "is_ready": "true",
+      "gambar": "soto.jpg"
+    },
+    {
+      "id": 6,
+      "kode": "K-06",
+      "nama": "Bakso",
+      "harga": 16000,
+      "is_ready": "true",
+      "gambar": "bakso.jpg"
+    },
+    {
+      "id": 7,
+      "kode": "K-07",
+      "nama": "Tenkleng Basong",
+      "harga": 16000,
+      "is_ready": "true",
+      "gambar": "tengkleng.jpg"
+    },
+    {
+      "id": 8,
+      "kode": "K-08",
+      "nama": "Ayam Bakar",
+      "harga": 16000,
+      "is_ready": "true",
+      "gambar": "ayam-bakar.jpg"
+    },
+    {
+      "id": 9,
+      "kode": "K-09",
+      "nama": "Ayam Taliwang",
+      "harga": 16000,
+      "is_ready": "true",
+      "gambar": "ayam-taliwang.jpg"
+    }
+  ],
+  "keranjangs": [
+    {
+      "jumlah_pemesanan": "1",
+      "id": 1
+    },
+    {
+      "jumlah_pemesanan": "1",
+      "keterangan": "Pedas\n",
+      "id": 2
+    },
+    {
+      "jumlah_pemesanan": "1",
+      "id": 3
+    }
+  ],
+  "pesanan": []
 }

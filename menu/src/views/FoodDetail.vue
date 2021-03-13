@@ -3,7 +3,7 @@
     <navbar />
     <div class="container">
       <!-- breadcrumb -->
-      <div class="row mt-5">
+      <div class="row mt-4">
         <div class="col">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -36,18 +36,25 @@
           <h4>
             Harga : <strong>Rp. {{ product.harga }}</strong>
           </h4>
-          <form class="mt-4">
+          <form class="mt-4" v-on:submit.prevent>
             <div class="form-group">
               <label for="jumlah-pemesanan">Jumlah Pesan</label>
-              <input type="number" class="form-control" />
+              <input
+                type="number"
+                class="form-control"
+                v-model="pesan.jumlah_pemesanan"
+              />
             </div>
             <div class="form-group">
               <label for="ketereangan">Keterangan</label>
               <textarea
+                v-model="pesan.keterangan"
                 class="form-control"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-success"><b-icon-cart></b-icon-cart>Pesan</button>
+            <button type="submit" class="btn btn-success" @click="pemesanan">
+              <b-icon-cart></b-icon-cart>Pesan
+            </button>
           </form>
         </div>
       </div>
@@ -66,12 +73,37 @@ export default {
   },
   data() {
     return {
-      product: [],
+      product: {},
+      pesan: {},
     };
   },
   methods: {
     setProduct(data) {
       this.product = data;
+    },
+    pemesanan() {
+      if (this.pesan.jumlah_pemesanan) {
+        this.pesan.products = this.products;
+        axios
+          .post("http://localhost:3000/keranjangs", this.pesan)
+          .then(() => {
+            this.$router.push({path: "/keranjang"})
+            this.$toast.success("Sukses Masuk Keranjang", {
+              type: "success",
+              position: "top-right",
+              duration: 3000,
+              dismissible: true,
+            });
+          })
+          .catch((error) => console.log(error));
+      } else {
+        this.$toast.error("Jumlah pesanan harus diisi", {
+          type: "error",
+          position: "top-right",
+          duration: 3000,
+          dismissible: true,
+        });
+      }
     },
   },
   mounted() {
