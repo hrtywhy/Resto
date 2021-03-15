@@ -1,6 +1,6 @@
 <template>
   <div class="food-detail">
-    <navbar />
+    <Navbar />
     <div class="container">
       <!-- breadcrumb -->
       <div class="row mt-4">
@@ -63,13 +63,13 @@
 </template>
 
 <script>
-import navbar from "@/components/navbar.vue";
+import Navbar from "@/components/Navbar.vue";
 import axios from "axios";
 
 export default {
   name: "FoodDetail",
   components: {
-    navbar,
+    Navbar,
   },
   data() {
     return {
@@ -87,7 +87,7 @@ export default {
         axios
           .post("http://localhost:3000/keranjangs", this.pesan)
           .then(() => {
-            this.$router.push({path: "/eranjang"})
+            this.$router.push({path: "/keranjang"})
             this.$toast.success("Sukses Masuk Keranjang", {
               type: "success",
               position: "top-right",
