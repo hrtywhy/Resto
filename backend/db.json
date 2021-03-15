@@ -99,12 +99,29 @@
       "gambar": "ayam-taliwang.jpg"
     }
   ],
-  "keranjangs": [
+  "keranjangs": [],
+  "pesanans": [
     {
-      "jumlah_pemesanan": "1",
-      "keterangan": "Pedas\n",
+      "nama": "1",
+      "noMeja": "2",
+      "keranjangs": [
+        {
+          "jumlah_pemesanan": "1",
+          "keterangan": "Pedas\n",
+          "id": 1
+        },
+        {
+          "jumlah_pemesanan": "2",
+          "keterangan": "Pedas",
+          "id": 2
+        },
+        {
+          "jumlah_pemesanan": "3",
+          "keterangan": "tidak pedas",
+          "id": 3
+        }
+      ],
       "id": 1
     }
-  ],
-  "pesanans": []
+  ]
 }

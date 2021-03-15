@@ -23,13 +23,13 @@
         <div class="col">
           <h2>
             Keranjang
-            <strong>Saya</strong>
+            <strong> Saya</strong>
           </h2>
           <div class="table-responsive mt-3">
             <table class="table">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
+                  <th scope="col">No.</th>
                   <th scope="col">Foto</th>
                   <th scope="col">Makanan</th>
                   <th scope="col">Keterangan</th>
