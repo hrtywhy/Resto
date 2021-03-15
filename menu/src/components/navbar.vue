@@ -2,7 +2,7 @@
   <div>
     <b-navbar toggleable="lg" type="light">
       <div class="container">
-        <b-navbar-brand href="#">Resto</b-navbar-brand>
+        <b-navbar-brand href="#">Kulineran</b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -25,7 +25,7 @@
                 <span class="badge badge-success ml-2">{{
                   updateKeranjang
                     ? updateKeranjang.length
-                    : jumlah_pesanan.length
+                    : jumlah_pesanans.length
                 }}</span>
               </router-link>
             </li>
@@ -38,28 +38,26 @@
 
 <script>
 import axios from "axios";
-
 export default {
-  name: "navbar",
+  name: "Navbar",
   data() {
     return {
-      jumlah_pesanan: [],
+      jumlah_pesanans: [],
     };
   },
   props: ["updateKeranjang"],
   methods: {
     setJumlah(data) {
-      this.jumlah_pesanan = data;
+      this.jumlah_pesanans = data;
     },
   },
   mounted() {
     axios
-      .get("http://localhost:3000/keranjang")
+      .get("http://localhost:3000/keranjangs")
       .then((response) => this.setJumlah(response.data))
       .catch((error) => console.log(error));
   },
 };
 </script>
 
-<style>
-</style>
+<style></style>
